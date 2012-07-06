@@ -1,7 +1,11 @@
-body {color: #000; background: url(pixel-grid.png); font-family: 'Terminal Dosis', sans-serif;}
-article {background: hsla(209, 62%, 51%, 0.8); padding: 10px; border-radius: 10px;}
+body {color: #000; font-family: 'Terminal Dosis', sans-serif;}
+body:not([id="index"]) {background: url(pixel-grid.png); }
+a {color: #000; background-color: hsla(0, 0%, 100%, 0.5); padding: 0 0.2em 0 0.2em; border-radius: 2px; text-decoration: none;}
+article {background: hsla(209, 62%, 51%, 0.8); padding: 10px; border-radius: 10px; overflow: hidden;}
 h1 {font-size: 1.5em; font-weight: bold; background-color: hsla(0, 0%, 100%, 0.7); border-radius: 4px; padding: 0 5px 5px 5px; clear:left;}
 p {font-size: 1.2em;}
+ul {margin-left: 0; padding-left: 0; list-style: none}
+li {font-size: 1em; margin-bottom: 0.2em;}
 pre, output {font-size: 1em; font-family: monospace; white-space: pre-wrap; display: block;}
 pre {font-weight: bold;}
 h1, p, pre, output {margin: 0 0 10px 0;}

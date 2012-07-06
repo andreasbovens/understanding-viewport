@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Understanding viewport</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis:200,400,700' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body id="index">
+<article id="article">
+<h1>Understanding viewport: examples</h1>
+<h2>Basics</h2>
+<ul>
+	<li><a href="noviewport.html">no viewport defined</a></li>
+	<li><a href="meta-width320.html">&lt;meta name="viewport" content="width=320"&gt;</a></li>
+	<li><a href="meta-width480.html">&lt;meta name="viewport" content="width=480"&gt;</a></li>
+	<li><a href="meta-width640.html">&lt;meta name="viewport" content="width=640"&gt;</a></li>
+	<li><a href="meta-widthdevicewidth.html">&lt;meta name="viewport" content="width=device-width"&gt;</a></li>
+	<li><a href="meta-initialscale1.html">&lt;meta name="viewport" content="initial-scale=1"&gt;</a></li>
+	<li><a href="meta-initialscale2.html">&lt;meta name="viewport" content="initial-scale=2"&gt;</a></li>
+	<li><a href="meta-initialscale05.html">&lt;meta name="viewport" content="initial-scale=0.5"&gt;</a></li>
+	<li><a href="meta-widthdevicewidth-initialscale1.html">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</a></li>
+	<li><a href="meta-widthdevicewidth-div600.html">&lt;meta name="viewport" content="width=device-width"&gt; + &lt;div style="width: 600px"&gt;</a></li>
+	<li><a href="meta-widthdevicewidth-initialscale1-div600.html">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; + &lt;div style="width: 600px"&gt;</a></li>
+	<li><a href="meta-heightdeviceheight.html">&lt;meta name="viewport" content="height=device-height"&gt;</a></li>	
+<h2>DPI-specific settings</h2>
+	<li><a href="meta-widthdevicewidth-withimage.html">&lt;meta name="viewport" content="width=device-width"&gt; with hi-res and lo-res images</a></li>
+	<li><a href="meta-widthdevicewidth-devicepixelratio.html">&lt;meta name="viewport" content="width=device-width"&gt; with device-pixel-ratio media query</a></li>
+	<li><a href="meta-widthdevicewidth-targetdensitydpidevicedpi.html">&lt;meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"&gt;</a></li>
+<h2>@viewport</h2>
+<ul>
+	<li><a href="atviewport.html">@viewport {width: device-width;}</a></li>
+	<li><a href="atviewport-mq.html">@viewport {width: device-width;} + media query</a></li>	
+</ul>
+</article>
+</body>
+</html>
