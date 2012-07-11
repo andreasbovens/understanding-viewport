@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title>&lt;meta name="viewport" content="width=device-width"&gt; with device-pixel-ratio media query</title>
 <meta name="viewport" content="width=device-width">
-<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis:200,400,700' rel='stylesheet' type='text/css'>
-<link href="style.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Terminal+Dosis:200,400,700" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
 <style>
 @media screen and (-o-min-device-pixel-ratio: 3/2) {
 	body {background-size: 1000px;}
@@ -15,10 +15,10 @@
 }
 @media screen and (-min--moz-device-pixel-ratio: 1.5) {
 	body {background-size: 1000px;}
-} 
+}
 </style>
 <script src="report.js"></script>
-<script type="text/javascript"> 
+<script>
 function init() {
 	var article = document.getElementById('article');
 	var top = document.getElementById('top');
@@ -33,7 +33,7 @@ window.addEventListener('load', init, false);
 <article id="article">
 <h1 id="top">viewport setting</h1>
 <pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
-+ 
++
 @media screen and (-o-min-device-pixel-ratio: 3/2) {
 body {background-size: 1000px;}
 }
@@ -42,7 +42,7 @@ body {background-size: 1000px;}
 }
 @media screen and (min--moz-device-pixel-ratio: 1.5) {
 body {background-size: 1000px;}
-} 
+}
 </code></pre>
 <h1>reported values</h1>
 <output></output>
