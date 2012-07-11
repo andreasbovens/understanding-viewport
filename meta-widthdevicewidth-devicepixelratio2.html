@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>&lt;meta name="viewport" content="width=device-width"&gt; with device-pixel-ratio media query (2)</title>
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis:200,400,700' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css">
+<style>
+@media (-o-min-device-pixel-ratio: 2/1),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min--moz-device-pixel-ratio: 2),
+       (min-resolution: 2dppx) {
+	body {background-size: 1000px;}
+}
+</style>
+<script src="report.js"></script>
+<script>
+function init() {
+	var article = document.getElementById('article');
+	var top = document.getElementById('top');
+	top.addEventListener('click', function () {
+		article.classList.toggle('fold');
+	}, false);
+}
+window.addEventListener('load', init, false);
+</script>
+</head>
+<body>
+<article id="article">
+<h1 id="top">viewport setting</h1>
+<pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
++
+@media (-o-min-device-pixel-ratio: 2/1),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min--moz-device-pixel-ratio: 2),
+       (min-resolution: 2dppx) {
+	body {background-size: 1000px;}
+}
+</code></pre>
+<h1>reported values</h1>
+<output></output>
+<h1>lorem ipsum</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non elit non enim consectetur iaculis ut ac mi. Sed adipiscing nulla id ipsum placerat congue. Quisque nec diam eget libero convallis iaculis. Nam feugiat purus id diam placerat suscipit. Cras nec tincidunt leo. Integer tincidunt porttitor enim, et elementum augue pellentesque id. Quisque leo velit, tincidunt in pretium in, cursus eu elit. Etiam vitae lacus ligula.</p>
+<p>Quisque nec diam eget libero convallis iaculis. Nam feugiat purus id diam placerat suscipit. Cras nec tincidunt leo. Integer tincidunt porttitor enim, et elementum augue pellentesque id. Quisque leo velit, tincidunt in pretium in, cursus eu elit. Etiam vitae lacus ligula.</p>
+</article>
+</body>
+</html>
